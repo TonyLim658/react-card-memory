@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import notRevealedImage from '../images/piggy512x512.png';
+// Styles
+import { Wrapper } from './Card.style'
 
 type Props = {
     callback: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -12,13 +14,13 @@ const Card: React.FC<Props> = ({
     imagePath,
     revealed
 }) => (
-    <div>
+    <Wrapper>
         <div className='card'>
-            <button disabled={revealed}>
-                <img src={revealed ? imagePath : notRevealedImage} alt='img'/>
-            </button>
+                <button disabled={revealed}>
+                    <img src={revealed ? imagePath : notRevealedImage} alt='img' />
+                </button>
         </div>
-    </div>
+    </Wrapper>
 );
 
 export default Card;

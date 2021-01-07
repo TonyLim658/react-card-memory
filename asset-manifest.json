@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/memory-card/static/js/main.00b65689.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.00b65689.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.5847b351.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.5847b351.js.map",
+    "static/js/2.146b1898.chunk.js": "/memory-card/static/js/2.146b1898.chunk.js",
+    "static/js/2.146b1898.chunk.js.map": "/memory-card/static/js/2.146b1898.chunk.js.map",
+    "static/js/3.8651582f.chunk.js": "/memory-card/static/js/3.8651582f.chunk.js",
+    "static/js/3.8651582f.chunk.js.map": "/memory-card/static/js/3.8651582f.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/memory-card/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.146b1898.chunk.js.LICENSE.txt": "/memory-card/static/js/2.146b1898.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/memory-card/static/media/logo.6ce24c58.svg",
+    "static/media/piggy512x512.fea9bbb8.png": "/memory-card/static/media/piggy512x512.fea9bbb8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5847b351.js",
+    "static/js/2.146b1898.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.00b65689.chunk.js"
+  ]
+}

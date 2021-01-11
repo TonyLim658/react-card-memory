@@ -1,24 +1,27 @@
 {
   "files": {
     "main.css": "/react-card-memory/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/react-card-memory/static/js/main.edae8654.chunk.js",
-    "main.js.map": "/react-card-memory/static/js/main.edae8654.chunk.js.map",
-    "runtime-main.js": "/react-card-memory/static/js/runtime-main.794863c6.js",
-    "runtime-main.js.map": "/react-card-memory/static/js/runtime-main.794863c6.js.map",
-    "static/js/2.0621c085.chunk.js": "/react-card-memory/static/js/2.0621c085.chunk.js",
-    "static/js/2.0621c085.chunk.js.map": "/react-card-memory/static/js/2.0621c085.chunk.js.map",
-    "static/js/3.bfc4e525.chunk.js": "/react-card-memory/static/js/3.bfc4e525.chunk.js",
-    "static/js/3.bfc4e525.chunk.js.map": "/react-card-memory/static/js/3.bfc4e525.chunk.js.map",
+    "main.js": "/react-card-memory/static/js/main.c7442fd5.chunk.js",
+    "main.js.map": "/react-card-memory/static/js/main.c7442fd5.chunk.js.map",
+    "runtime-main.js": "/react-card-memory/static/js/runtime-main.1f340a81.js",
+    "runtime-main.js.map": "/react-card-memory/static/js/runtime-main.1f340a81.js.map",
+    "static/js/2.d9c8e099.chunk.js": "/react-card-memory/static/js/2.d9c8e099.chunk.js",
+    "static/js/2.d9c8e099.chunk.js.map": "/react-card-memory/static/js/2.d9c8e099.chunk.js.map",
+    "static/js/3.523e28b4.chunk.js": "/react-card-memory/static/js/3.523e28b4.chunk.js",
+    "static/js/3.523e28b4.chunk.js.map": "/react-card-memory/static/js/3.523e28b4.chunk.js.map",
     "index.html": "/react-card-memory/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/react-card-memory/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.0621c085.chunk.js.LICENSE.txt": "/react-card-memory/static/js/2.0621c085.chunk.js.LICENSE.txt",
+    "static/js/2.d9c8e099.chunk.js.LICENSE.txt": "/react-card-memory/static/js/2.d9c8e099.chunk.js.LICENSE.txt",
+    "static/media/boarding_pass.cf14b0b8.jpg": "/react-card-memory/static/media/boarding_pass.cf14b0b8.jpg",
+    "static/media/code.b6e6e612.png": "/react-card-memory/static/media/code.b6e6e612.png",
     "static/media/logo.6ce24c58.svg": "/react-card-memory/static/media/logo.6ce24c58.svg",
+    "static/media/nook.8a7c3c64.jpg": "/react-card-memory/static/media/nook.8a7c3c64.jpg",
     "static/media/piggy512x512.fea9bbb8.png": "/react-card-memory/static/media/piggy512x512.fea9bbb8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.794863c6.js",
-    "static/js/2.0621c085.chunk.js",
+    "static/js/runtime-main.1f340a81.js",
+    "static/js/2.d9c8e099.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.edae8654.chunk.js"
+    "static/js/main.c7442fd5.chunk.js"
   ]
 }

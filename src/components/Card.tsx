@@ -23,7 +23,7 @@ const Card: React.FC<Props> = ({
         <div className='card'>
                 <button disabled={cardRevealed[num] || userAnswer?.firstCardSelected === num || userAnswer?.secondCardSelected === num} 
                         onClick={callback} value={num}>
-                    <img src={cardRevealed[num] ? imagePath : notRevealedImage} alt={imagePath} />
+                    <img src={cardRevealed[num] || userAnswer?.firstCardSelected === num || userAnswer?.secondCardSelected === num ? imagePath : notRevealedImage} alt={imagePath} />
                 </button>
         </div>
     </Wrapper>

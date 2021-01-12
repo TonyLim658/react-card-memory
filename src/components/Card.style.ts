@@ -15,8 +15,8 @@ export const Wrapper = styled.div`
     .card img{
         border-radius: 2em;
         display: flex;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
     }
 
     .hexagon-wrapper {

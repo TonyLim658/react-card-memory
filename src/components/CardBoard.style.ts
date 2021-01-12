@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
         display: -webkit-flex;
         -webkit-flex-direction: row;
         -webkit-flex-wrap: wrap;
-        width: 650px;
+        width: 700px;
         height: auto;
         min-height: 200px;
     }

@@ -19,6 +19,7 @@ const EMPTY_ANSWER = {firstCardSelected: undefined, secondCardSelected: undefine
 const CardBoard = () => {
     const [userAnswer, setUserAnswer] = useState<AnswerObject>(EMPTY_ANSWER);
     const [cardRevealed, setCardRevealed] = useState<boolean[]>([]);
+    const [gameOver, setGameOver] = useState(false);
     // TODO set as more generic
     const cardImg: string[] = [img1, img2, img1, img2, img3, img3];
 
@@ -52,6 +53,9 @@ const CardBoard = () => {
             const correct = cardImg[answerObject.firstCardSelected-1] === cardImg[answerObject.secondCardSelected-1];
             cardRevealed[answerObject?.firstCardSelected] = 
                                     cardRevealed[answerObject.secondCardSelected] = correct;
+            if((cardRevealed.length - 1) === cardImg.length && cardRevealed.every(e => e)) {
+                setGameOver(true);
+            }
             console.log(cardRevealed);
             // TODO waiting with state
             setUserAnswer(EMPTY_ANSWER);
@@ -60,18 +64,20 @@ const CardBoard = () => {
 
     return (
         <Wrapper>
-            <div className='cardboard'>
-                {cardImg.map((path, ind) => (
-                    <Card
-                        key={ind}
-                        num={ind+1}
-                        callback={checkAnswer}
-                        imagePath={path}
-                        userAnswer={userAnswer}
-                        cardRevealed={cardRevealed}
-                    />
-                ))}
-            </div>
+            {!gameOver ?
+                (<div className='cardboard'>
+                    {cardImg.map((path, ind) => (
+                        <Card
+                            key={ind}
+                            num={ind+1}
+                            callback={checkAnswer}
+                            imagePath={path}
+                            userAnswer={userAnswer}
+                            cardRevealed={cardRevealed}
+                        />
+                    ))}
+                </div>)
+            : <h1>FINI</h1>}
         </Wrapper>
     );
 }

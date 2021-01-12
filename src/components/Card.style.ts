@@ -1,14 +1,20 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+    .card {
+        margin:2px;
+        border:1px;
+    }
+
     .card button{
+        border: transparent;
+        border-radius: 2em;
         background: transparent;
     }
 
-    .card button, img{
-        margin: auto;
+    .card img{
+        border-radius: 2em;
         display: flex;
-        text-align: initial;
         width: 100px;
         height: 100px;
     }

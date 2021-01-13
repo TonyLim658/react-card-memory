@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 // Components
 import CardBoard from './components/CardBoard';
-// TODO set import for images
 
 const App = () => {
+    // TODO def props
     return (
         <div className="App">
             <header className="App-header">

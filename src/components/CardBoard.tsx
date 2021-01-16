@@ -3,12 +3,6 @@ import React, { useState } from 'react';
 import { Wrapper } from './CardBoard.style'
 // Components
 import Card from './Card'
-// Images
-import img1 from '../images/boarding_pass.jpg';
-import img2 from '../images/code.png';
-import img3 from '../images/nook.jpg';
-import img4 from '../images/qr_code.png';
-import img5 from '../images/todd_ross.jpg';
 
 export type AnswerObject = {
     firstCardSelected: number | undefined;
@@ -18,24 +12,18 @@ const EMPTY_ANSWER = {firstCardSelected: undefined, secondCardSelected: undefine
 
 type Props = {
     callback: (e: React.MouseEvent<HTMLButtonElement>) => void;
+    cardImg: string[];
 }
 
 const CardBoard: React.FC<Props> = ({
-    callback
+    callback,
+    cardImg
 }) => {
     const [userAnswer, setUserAnswer] = useState<AnswerObject>(EMPTY_ANSWER);
     const [cardRevealed, setCardRevealed] = useState<boolean[]>([]);
     const [gameOver, setGameOver] = useState(false);
     // TODO set as more generic
-    const cardImg: string[] = [img1, img2, img1, img2, img3, img3];
-
-    // TODO start
-    const startTrivia = async () => {
-        setUserAnswer(EMPTY_ANSWER);
-        // setCardRevealed([false]);
-        // TODO better setting
-    }
-    
+    console.log(cardImg);
 
     const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
         const val: number = Number(e.currentTarget.value)

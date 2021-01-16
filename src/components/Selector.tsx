@@ -12,7 +12,7 @@ const Selector: React.FC<Props> = ({
     <div>
         <p>Selector</p>
         <div>
-            <button onClick={callback}>START GAME</button>
+            <button onClick={callback} value='3'>START GAME</button>
         </div>
     </div>
     );

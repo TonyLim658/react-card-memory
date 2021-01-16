@@ -16,7 +16,13 @@ export type AnswerObject = {
 }
 const EMPTY_ANSWER = {firstCardSelected: undefined, secondCardSelected: undefined}
 
-const CardBoard = () => {
+type Props = {
+    callback: (e: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const CardBoard: React.FC<Props> = ({
+    callback
+}) => {
     const [userAnswer, setUserAnswer] = useState<AnswerObject>(EMPTY_ANSWER);
     const [cardRevealed, setCardRevealed] = useState<boolean[]>([]);
     const [gameOver, setGameOver] = useState(false);
@@ -77,7 +83,7 @@ const CardBoard = () => {
                         />
                     ))}
                 </div>)
-            : <h1>FINI</h1>}
+            : <h1><button onClick={callback}>FINI</button></h1>}
         </Wrapper>
     );
 }
